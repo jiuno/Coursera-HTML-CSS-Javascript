@@ -1,159 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESTING GitHub hosting</title>
-<style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TESTING GitHub hosting</title>
+    <style>
 
-    * {
+    *{
         box-sizing: border-box;
-        background-color: indianred;
-        padding: 0;
-        margin: 0;
-        
     }
-    h1 {
-        color: indigo;
+
+    h1
+    {
+        margin-bottom: 30px;
         text-align: center;
+    }
+
+    p
+    {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Helvetica;
+        color: black;
+        margin-top: 15%;
         
     }
 
-    .container{
-        background-color: lightslategrey;
-        padding: 10px;
-        border: 2px black solid;
-        border-radius: 30px ;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .menu {
-        background-color: grey;
+    .MenuContainer{
+        position: relative;
         float: left;
-        padding: 10px;
-        border: 1px black;
-        border-radius: 50px;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: gray;
+        height: auto;
+        overflow: hidden;
+        margin-right: 1%;
+        margin-top: 1%;
+        
     }
-   
+
+    .titleMenuBox
+    {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        width: 150px;
+        height: auto;
+        margin-top: 1%;
+        margin-bottom: 40px;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: pink;
+        text-align: center;
+    }
+
+    #Meat{
+        color: indianred;
+        text-align: center;
+    }
 
     /* Simple Responsive Framework. */
-    .row {
-    width: 100%;
-    }
-
-    /********** Large devices only **********/
-    @media (min-width: 1200px) {
-    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, 
-    .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12
-
-    .col-lg-1 {
-        width: 8.33%;
-    }
-    .col-lg-2 {
-        width: 16.66%;
-    }
-    .col-lg-3 {
-        width: 25%;
-    }
-    .col-lg-4 {
-        width: 33.33%;
-    }
-    .col-lg-5 {
-        width: 41.66%;
-    }
-    .col-lg-6 {
-        width: 50%;
-    }
-    .col-lg-7 {
-        width: 58.33%;
-    }
-    .col-lg-8 {
-        width: 66.66%;
-    }
-    .col-lg-9 {
-        width: 74.99%;
-    }
-    .col-lg-10 {
-        width: 83.33%;
-    }
-    .col-lg-11 {
-        width: 91.66%;
-    }
-    .col-lg-12 {
+    .row
+    {
         width: 100%;
     }
+
+    /********** desktop-class devices only **********/
+    @media (min-width: 992px)
+    {
+        .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7,
+        .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12
+
+        .col-lg-1
+        {
+            width: 8.33%;
+        }
+
+        .col-lg-2
+        {
+            width: 16.66%;
+        }
+
+        .col-lg-3
+        {
+            width: 25%;
+        }
+
+        .col-lg-4
+        {
+            /* width: 33.33%; */
+            width: 32%;
+        }
+
+        .col-lg-5
+        {
+            width: 41.66%;
+        }
+
+        .col-lg-6
+        {
+            width: 50%;
+        }
+
+        .col-lg-7
+        {
+            width: 58.33%;
+        }
+
+        .col-lg-8
+        {
+            width: 66.66%;
+        }
+
+        .col-lg-9
+        {
+            width: 74.99%;
+        }
+
+        .col-lg-10
+        {
+            width: 83.33%;
+        }
+
+        .col-lg-11
+        {
+            width: 91.66%;
+        }
+
+        .col-lg-12
+        {
+            width: 100%;
+        }
+
     }
 
-    /********** Medium devices only **********/
-    @media (min-width: 992px) and (max-width: 1199px) {
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
-    .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 
-    
-    .col-md-1 {
-        width: 8.33%;
-    }
-    .col-md-2 {
-        width: 16.66%;
-    }
-    .col-md-3 {
-        width: 25%;
-    }
-    .col-md-4 {
-        width: 33.33%;
-    }
-    .col-md-5 {
-        width: 41.66%;
-    }
-    .col-md-6 {
-        width: 50%;
-    }
-    .col-md-7 {
-        width: 58.33%;
-    }
-    .col-md-8 {
-        width: 66.66%;
-    }
-    .col-md-9 {
-        width: 74.99%;
-    }
-    .col-md-10 {
-        width: 83.33%;
-    }
-    .col-md-11 {
-        width: 91.66%;
-    }
-    .col-md-12 {
-        width: 100%;
-    }
+    /********** tablet-class devices only **********/
+    @media (min-width: 768px) and (max-width: 991px)
+    {
+        .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+        .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12
+        {
+            /* float: left;
+            border: 1px solid green; */
+            position: relative;
+            float: left;
+            border: 1px solid black;
+            background-color: gray;
+            height: 300px;
+            overflow: hidden;
+            margin-right: 1%;
+            margin-top: 1%;
+        }
+
+        .col-md-1
+        {
+            width: 8.33%;
+        }
+
+        .col-md-2
+        {
+            width: 16.66%;
+        }
+
+        .col-md-3
+        {
+            width: 25%;
+        }
+
+        .col-md-4
+        {
+            width: 33.33%;
+        }
+
+        .col-md-5
+        {
+            width: 41.66%;
+        }
+
+        .col-md-6
+        {
+            /* width: 50%; */
+            width: 49%;
+        }
+
+        .col-md-7
+        {
+            width: 58.33%;
+        }
+
+        .col-md-8
+        {
+            width: 66.66%;
+        }
+
+        .col-md-9
+        {
+            width: 74.99%;
+        }
+
+        .col-md-10
+        {
+            width: 83.33%;
+        }
+
+        .col-md-11
+        {
+            width: 91.66%;
+        }
+
+        .col-md-12
+        {
+            width: 100%;
+        }
     }
 
+    /********** mobile-class devices only **********/
+    @media (max-width: 767px)
+    {
+        .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+        .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12
+        {
+            /* float: left;
+            border: 1px solid green; */
+            position: relative;
+            float: left;
+            border: 1px solid black;
+            background-color: gray;
+            height: 300px;
+            overflow: hidden;
+            margin-right: 1%;
+            margin-top: 1%;
+        }
 
-    #carne {
-        color: darkred;
+        .col-sm-1
+        {
+            width: 8.33%;
+        }
+
+        .col-sm-2
+        {
+            width: 16.66%;
+        }
+
+        .col-sm-3
+        {
+            width: 25%;
+        }
+
+        .col-sm-4
+        {
+            width: 33.33%;
+        }
+
+        .col-sm-5
+        {
+            width: 41.66%;
+        }
+
+        .col-sm-6
+        {
+            width: 50%;
+        }
+
+        .col-sm-7
+        {
+            width: 58.33%;
+        }
+
+        .col-sm-8
+        {
+            width: 66.66%;
+        }
+
+        .col-sm-9
+        {
+            width: 74.99%;
+        }
+
+        .col-sm-10
+        {
+            width: 83.33%;
+        }
+
+        .col-sm-11
+        {
+            width: 91.66%;
+        }
+
+        .col-sm-12
+        {
+            width: 100%;
+        }
     }
-    #vegetariano {
-        color: green;
-    }
 
-    #pasta{
-        color: burlywood;
-    }
+    </style>
+    </head>
+
+    <body>
+        <h1>Testing GitHub hosting</h1>
+        <div class="row">
+            <section class="MenuContainer col-lg-4 col-md-6 col-sm-12 ">
+                <h2 class="titleMenuBox"  id= "Meat">What?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            </section>
+
+            <section class="MenuContainer col-lg-4 col-md-6 col-sm-12 ">
+                <h2 class="titleMenuBox"  id= "Meat">Why?</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to 
+                    using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors
+                    now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </section>
+            <section class="MenuContainer col-lg-4 col-md-6 col-sm-12 ">
+                <h2 class="titleMenuBox" id= "Meat">Where?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            </section>
 
 
-</style>
 
-</head>
-<body>
-    <h1 class="titulo">TESTING GitHub</h1>
-    <section class="container row">
-        <h2 class= "menu col-lg-4" id="carne">Intestino de cerdo ahumado</h2>
-        <h2 class= "menu col-lg-4" id="vegetariano">Verdurita</h2>
-        <h2 class= "menu col-lg-4" id="pasta">fideitos</h2>
-    </section>
-</body>
-</html>
+
+
+        </div>
+
+
+
+
+
+
+    </body>
+
