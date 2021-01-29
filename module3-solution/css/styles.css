@@ -1,0 +1,88 @@
+body   {
+    font-size: 16px;
+    color: #000000;
+    font-family:'Courier New', Courier, monospace
+}
+/** HEADER **/
+#header-nav {
+    background-color: grey;
+    border-radius: 0;
+    border: 2px black solid;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+
+.navbar-nav{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #ffffff;
+}
+.container{
+    margin-left: 0;
+}
+
+#logo{
+    color: #000000;
+    font-size: 1.4em;
+    font-weight: 600; 
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+
+#collapsable-nav .navbar-collapse{
+    border: 2px 2px 2px 2px #000000 solid;
+}
+
+#nav-list a{
+    border-bottom: 1px #000000 solid;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+#nav-list a:hover, #nav-list a:focus{
+    background-color: lightblue ;
+}
+#title{
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+#menu-container{
+    background-color: grey;
+    width: 90%; 
+    margin-bottom: 40px;
+    
+}
+
+#menu-container h2{
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    #menu-title{
+        background-color: grey;
+        width: 70%;
+        
+    }
+
+}
