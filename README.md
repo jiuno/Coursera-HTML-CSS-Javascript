@@ -12,5 +12,5 @@ https://jiuno.github.io/Coursera-HTML-CSS-Javascript-Bruno/module3-solution/
 https://jiuno.github.io/Coursera-HTML-CSS-Javascript-Bruno/module4-solution/
 
 ### Module 5 assignment link:
-https://jiuno.github.io/Coursera-HTML-CSS-Javascript-Bruno/module5-solution/index.html/
+https://jiuno.github.io/Coursera-HTML-CSS-Javascript-Bruno/module5-solution/index.html
 
